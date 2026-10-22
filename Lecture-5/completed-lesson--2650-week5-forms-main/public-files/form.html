@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Hello Form Handling in Express!</h1>
+
+    <!-- By default, when we submit the form, it sends a GET request. And data sent in a GET request is encoded in the URL. A GET request is an HTTP request that asks to get something from the server. How does the form know the address of the server? (by default, it doesn't; we have to tell it the address). We use the action attribute on the form to specify the location of the script that will handle the form on the server. -->
+     <!-- Use POST method becuase creating a registration -->
+    <form method="POST" action="/registration">
+        <label>
+            Your Last Name:
+            <input type="text" name="lastName">
+        </label>
+        <label>
+            Your student number:
+            <input type="number" name="studentNumber">
+        </label>
+        <fieldset>
+            <legend>Course</legend>
+            <label>
+                CPSC 2600
+                <input type="radio" name="courseNumber" value="2600" checked>
+            </label>
+            <label>
+                CPSC 2650
+                <input type="radio" name="courseNumber" value="2650">
+            </label>
+        </fieldset>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

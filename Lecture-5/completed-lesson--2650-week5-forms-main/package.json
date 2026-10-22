@@ -1,0 +1,17 @@
+{
+  "name": "codespaces-blank",
+  "version": "1.0.0",
+  "description": "Today: Middleware for forms - On the client browser, the HTML form is displayed to the user. The user fills the form and submits it. The data from the form is then sent to the server, where a server-side script does something with it.  - We'll write a program to handle form submission using Node.js and Express. - We will validate the form - check if it's accurate (is the data in the right format? Did they fill everything in? Did they accidentally enter their name in the email field? etc.) We try to catch these errors and help the user fix them.     - Different kinds of validation. We can check on the client, in the browser.     - Essential to also validate on the browser, becauase this validation cannot be bypassed. (Best is to validate on client and server)     - Our validation will do things like check patterns (does an email address have an @, does a student number have the right number of digits, etc.)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

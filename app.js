@@ -10,8 +10,8 @@ const ourfirstmiddleware = (req, res, next) => {
 // Challenge : make a middleware that adds a message only for endpoint c 
 // the end reuslt is that b/ and c/ should have diffrent message 
 // Middleware must come before the routes
-
 const cmiddleware = (req,res, next)=> {
+
   res.locals.message = 'hello i forgot my homework ';
   next();
 }

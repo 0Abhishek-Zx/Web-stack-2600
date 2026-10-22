@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Langara Pizza</h1>
+        <p class="tagline">Online Order Form</p>
+    </header>
+    
+    <form method="POST" action="/orders">
+        <!-- TODO: pizza order form -->
+
+<fieldset>
+    <legend>Pizza Order</legend>
+
+    <fieldset>
+        <legend>SAUCE</legend>
+
+        <label>
+            Tomato
+            <input type="radio" name="sauce" value="tomato" checked>
+        </label>
+
+        <label>
+            Alfredo
+            <input type="radio" name="sauce" value="alfredo">
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Toppings</legend>
+
+        <label>
+            Pepperoni
+            <input type="checkbox" name="Toppings" value="Pepperoni" checked>
+        </label>
+
+        <label>
+            Ham
+            <input type="checkbox" name="Toppings" value="Ham">
+        </label>
+
+        <label>
+            Peppers
+            <input type="checkbox" name="Toppings" value="Peppers">
+        </label>
+
+        <label>
+            Vegetarian Sausage
+            <input type="checkbox" name="Toppings" value="Vegetarian Sausage">
+        </label>
+
+        <label>
+            Mushrooms
+            <input type="checkbox" name="Toppings" value="Mushrooms">
+        </label>
+
+        <label>
+            Olives
+            <input type="checkbox" name="Toppings" value="Olives">
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Your Info</legend>
+
+        <label>
+            Your name
+            <input type="text" name="yourName" value="">
+        </label>
+
+        <label>
+            Email
+            <input type="email" name="email" value="">
+        </label>
+    </fieldset>
+
+   
+</fieldset>
+ <button type="submit">Submit</button>
+
+    </form>
+
+    <form action="/" method="GET" id="color-form">
+        <label>
+            Change background color: 
+            <input type="color" name="color">
+        </label>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
