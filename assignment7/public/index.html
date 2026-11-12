@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A5 Test Page</title>
+</head>
+<body>
+
+    <h1>Assignment 7 - Books Edition</h1>
+    <p>Use this page to test your server-side application!</p>
+
+    <h2>Browse Authors</h2>
+    <a href="/api/v1/authors">All Authors</a>
+    
+    <h2>Browse Books</h2>
+    <form action="/api/v1/books" method="GET">
+        <label>
+            Format:
+            <select name="format">
+                <option value="hardcover">Hard Cover</option>
+                <option value="paperback">Paperback</option>
+            </select>
+        </label>
+        <label>
+            Page:
+            <input name="page" type="number" min="0" value="0">
+        </label>
+        <button>submit</button>
+    </form>
+
+    <h2>Details for Selected Books</h2>
+    <ul>
+        <li><a href="/api/v1/books/2">2</a></li>
+        <li><a href="/api/v1/books/4">4</a></li>
+        <li><a href="/api/v1/books/8">8</a></li>
+        <li><a href="/api/v1/books/16">16</a></li>
+        <li><a href="/api/v1/books/32">32</a></li>
+    </ul>
+
+    
+    <h2>Details for Selected Authors</h2>
+    <ul>
+        <li><a href="/api/v1/Authors/6">6</a></li>
+        <li><a href="/api/v1/Authors/12">12</a></li>
+        <li><a href="/api/v1/Authors/18">18</a></li>
+        <li><a href="/api/v1/Authors/24">24</a></li>
+        <li><a href="/api/v1/Authors/30">30</a></li>
+    </ul>
+ <fieldset>
+  
+
+    <form action="/api/v1/reviews" method="POST">
+        <h2> Write a Review</h2>
+        <label>
+            Your Name
+            <input name="reviewer" type="text" required>
+        </label>
+
+        <label>
+            ID of book you'd like to review
+            <input name="book_id" type="number" min="1" required>
+        </label>
+
+        <br>
+
+        <label>
+            Your rating of the book
+            <input name="rating" type="number" min="1" max="5" required>
+        </label>
+
+        <label>
+            Your comments
+            <textarea name="comment" required></textarea>
+        </label>
+
+        <button type="submit">Submit</button>
+    </form>
+</fieldset>
+
+    <h2>Selected Reviews By ID</h2>
+    <ul>
+        <li><a href="/api/v1/reviews/1">1</a></li>
+        <li><a href="/api/v1/reviews/2">2</a></li>
+        <li><a href="/api/v1/reviews/3">3</a></li>
+        
+    </ul>
+
+</body>
+</html>
